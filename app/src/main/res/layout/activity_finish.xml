@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b13"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight=".5"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#909050" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/lo2" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        />
+
+    <design.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="we are waiting for your payment to confirm your reservation by this Id :"
+        android:textColor="#ffff"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/go_res_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="#jgkjflgfdjgfdlfdk"
+        android:textColor="#909050"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/ret_res_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="#jgkjflgfdjgfdlfdk"
+        android:textColor="#909050"
+        android:textSize="25sp" />
+
+</LinearLayout>

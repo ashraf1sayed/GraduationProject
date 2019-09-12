@@ -1,0 +1,58 @@
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <TextView
+        android:id="@+id/Depart_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:text="الرحلة"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:id="@+id/Rel_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Depart_id"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/to_id_bar_R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="المنيا"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/image_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/to_id_bar_R"
+            app:srcCompat="@drawable/ic_swap" />
+
+        <TextView
+            android:id="@+id/from_id_bar_R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_id"
+            android:text="القاهرة"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/date_id_bar_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Rel_id"
+        android:layout_centerInParent="true"
+        android:text="اربعاء,20 مارس 2019"
+        android:textSize="15sp" />
+</RelativeLayout>

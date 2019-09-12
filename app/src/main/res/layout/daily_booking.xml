@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b13"
+    android:fillViewport="true"
+    android:layoutDirection="rtl">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/lo2"
+            />
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/log"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <LinearLayout
+                        android:id="@+id/go_lay"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dark"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <design.MyTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="ذهاب فقط"
+                            android:textColor="#909050"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#686262" />
+
+                    <LinearLayout
+                        android:id="@+id/go_ret_lay"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="2dp"
+                        android:paddingBottom="5dp">
+
+                        <design.MyTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="ذهاب وعوده"
+                            android:textColor="#909050"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0"
+                    android:textColor="#FFFFFF"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/log"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <design.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="من"
+                        android:textColor="#909050"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#686262" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner_from"
+                        style="@style/Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/nationality">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/log"
+                    android:orientation="horizontal"
+                    android:padding="1dp">
+
+                    <design.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="الى"
+
+                        android:textColor="#909050"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="#686262" />
+
+
+                    <Spinner
+                        android:id="@+id/spinner_to"
+                        style="@style/Spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/nationality">
+
+                    </Spinner>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:id="@+id/dateDisplay_go"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/moraba3"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_action_calendar_month" />
+
+                        <design.MyTextView
+                            android:id="@+id/date_id_go"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="تاريخ الذهاب"
+                            android:textColor="#909050"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/dateDisplay_ret"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/icon"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                           />
+
+                        <design.MyTextView
+                            android:id="@+id/dat_ret"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text=" "
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_margin="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/goldenback"
+            android:elevation="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <design.MyTextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="1dp"
+                android:text="بحث"
+                android:textColor="#ffff"
+                android:textSize="25sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

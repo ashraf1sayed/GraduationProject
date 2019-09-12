@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttomwhite"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:scaleX=".9"
+    android:elevation="8dp"
+    android:scaleY=".9">
+
+
+    <LinearLayout
+        android:id="@+id/event_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/N_kid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="6"
+            android:layoutDirection="ltr"
+            android:orientation="vertical"
+            android:paddingLeft="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="right"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/timeid_m"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:text="01:00 صباحا"
+                    android:textColor="#909050"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cl" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/price_id_m"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="2"
+                    android:gravity="bottom"
+                    android:text=" 35 جنيه"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <design.MyTextView
+                android:id="@+id/bus_number_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="#552222"
+                android:textColor="#009FD8"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:scaleType="fitXY"
+                android:src="@drawable/bus_icon" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/boolking_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="ltr"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/boolking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="حجز"
+
+            android:gravity="center"
+
+            />
+        <Button
+            android:id="@+id/cancel_booking_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الغاء الحجز"
+            android:visibility="gone"
+
+            android:background="@drawable/select_bus_back"
+            android:gravity="center"
+
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

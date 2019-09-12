@@ -1,0 +1,707 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt24"
+    android:layoutDirection="rtl"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+    <include layout="@layout/content_spinner" />
+
+    <ScrollView
+        android:id="@+id/scrol_id"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/dateDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/moraba3"
+                android:gravity="center"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_action_calendar_month" />
+
+                <design.MyTextView
+                    android:id="@+id/date_id_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="تاريخ بداية الحجز"
+                    android:textColor="#909050"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="السبت"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="الاحد"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="الاثنين"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="الثلاثاء"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="الاربعاء"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="الخميس"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginRight="7dp"
+                android:layoutDirection="rtl"
+                android:orientation="vertical">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="5dp"
+                    android:text="الجمعة"
+                    android:textColor="#FF4081"
+                    android:textSize="25sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonstayl2"
+                    android:orientation="horizontal"
+                    android:paddingRight="2dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="ذهاب"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+
+                        >
+
+                        <design.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="8dp"
+                            android:paddingRight="5dp"
+                            android:text="عودة"
+                            android:textColor="#ffff"
+                            android:textSize="25sp" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/r14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:paddingBottom="3dp"
+
+
+                            >
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btn_monthly_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10dp"
+                android:background="@drawable/back_list"
+                android:gravity="center"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="تسجل "
+                    android:textColor="#FFFFFF"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

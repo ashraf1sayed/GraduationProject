@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="@drawable/bt24"
+
+    android:orientation="vertical"
+    tools:context="com.example.dell.wasalny_last.ticket_monthly">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+
+        >
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="من"
+            android:textColor="#ffff"
+            android:textSize="18sp" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#909050"
+            android:text="مغاغة" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="الى"
+            android:textColor="#ffff"
+
+            android:textSize="18sp" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="المنيا" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+
+        >
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="تاريخ البداية:"
+            android:textSize="18sp" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2019-4-12" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="تاريخ النهاية:"
+            android:textSize="18sp" />
+
+        <design.MyTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="2019-5-12" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:background="@android:color/darker_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <design.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="السبت"
+            android:textColor="#FF4081"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <design.MyTextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="وقت الذهاب"
+
+
+                />
+            <design.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="الساعة 10"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+            <design.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="وقت الذهاب"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_weight="1"
+                />
+            <design.MyTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="الساعة 11"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+
+

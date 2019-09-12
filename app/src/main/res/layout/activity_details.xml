@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layoutDirection="rtl"
+    android:background="#ffff"
+    tools:context="com.example.dell.wasalny_last.Details"
+   android:orientation="vertical">
+  <EditText
+      android:id="@+id/email_id"
+      android:inputType="textEmailAddress"
+      android:layout_marginTop="30dp"
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="ادخل الايميل الخاص بيك"
+    android:padding="10dp"
+    />
+    <EditText
+        android:id="@+id/phone_id"
+        android:inputType="phone"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="رقم التليفون"
+        android:padding="10dp"
+        />
+  <EditText
+      android:id="@+id/seats_id"
+      android:inputType="number"
+      android:layout_marginTop="30dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="عدد الكراسي"
+      android:padding="10dp"
+      />
+    <Button
+        android:layoutDirection="rtl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/go_btn"
+        android:text="`ذهاب للدفع"/>
+</LinearLayout>

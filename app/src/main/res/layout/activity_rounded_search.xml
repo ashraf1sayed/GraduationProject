@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242E3A"
+    android:layoutDirection="rtl"
+
+    android:orientation="vertical"
+
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#909050"
+            android:title=""
+            android:weightSum="1"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <ImageView
+                android:id="@+id/book_img_id"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/confirmed"
+                android:padding="5dp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/Depart_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:text="الرحلة"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:id="@+id/Rel_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Depart_id"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/to_id_bar_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="المنيا"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/image_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@id/to_id_bar_R"
+                        app:srcCompat="@drawable/ic_swap" />
+
+                    <TextView
+                        android:id="@+id/from_id_bar_R"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/image_id"
+                        android:text="القاهرة"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/date_id_bar_r"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Rel_id"
+                    android:layout_centerInParent="true"
+                    android:text="اربعاء,20 مارس 2019"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/back_list"
+                android:gravity="center"
+                android:layoutDirection="rtl">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="ذهاب"
+                    android:textColor="#ffffff"
+                    android:textDirection="rtl"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainDataGo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/back_list"
+                android:gravity="center"
+                android:layoutDirection="rtl">
+
+                <design.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="عودة"
+                    android:textColor="#ffffff"
+                    android:textDirection="rtl"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/mainDataRet"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

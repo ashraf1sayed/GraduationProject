@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7C7C7"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/bus" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff">
+
+        <RelativeLayout
+            android:id="@+id/cred_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/Credit_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دفع بالفيزا"
+                android:gravity="center"
+
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/baseline_keyboard_arrow_right_black_18dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fawr_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cred_id"
+            android:layout_marginTop="5dp"
+            android:background="#ffffff"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="فوري"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/baseline_keyboard_arrow_right_black_18dp" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

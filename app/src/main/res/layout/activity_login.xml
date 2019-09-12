@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt24"
+    android:orientation="vertical"
+    android:layoutDirection="rtl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:orientation="vertical"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/lo2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:background="#ffff" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layoutDirection="rtl"
+                android:text="دخول "
+                android:textColor="#909050"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1"
+                android:background="#ffff" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:background="#c7c7c7">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:background="@drawable/count2"
+                android:padding="10dp"
+                android:scaleX=".9"
+                android:scaleY="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layoutDirection="rtl"
+                    android:orientation="vertical"
+                    >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/backwhite"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/mail" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#686262" />
+
+                        <EditText
+                            android:id="@+id/mail_login"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="6"
+                            android:background="@android:color/transparent"
+                            android:hint="الايميل الشخصي"
+                            android:textColor="#21285C"
+                            android:inputType="textPersonName"
+                            android:maxLength="15" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/backwhite"
+                        android:orientation="horizontal"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/lock" />
+
+                        <View
+                            android:layout_width="2dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="15dp"
+                            android:background="#686262" />
+
+                        <EditText
+                            android:id="@+id/password_login"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="6"
+                            android:background="@android:color/transparent"
+                            android:hint="الرقم السري"
+                            android:inputType="textPersonName"
+                            android:maxLength="15"
+                            android:textColor="#21285C" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layoutDirection="rtl"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#c7c7c7"
+            android:gravity="center"
+            android:paddingRight="30dp"
+            android:text="لا امتلك حساب: "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/Register_login"
+            android:layout_height="wrap_content"
+            android:text="تسجيل جديد "
+            android:textColor="#F2340E"
+
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+        <LinearLayout
+            android:id="@+id/login_lay"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/goldenback"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="دخول"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt24"
+    android:layoutDirection="rtl"
+    tools:context="com.example.dell.wasalny_last.ticket_monthly">
+
+    <LinearLayout
+        android:id="@+id/not_logined_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="vertical"
+
+
+        >
+
+        <design.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:text="يجب عليك تسجيل الدخول اولا :- "
+            android:textColor="#fff" />
+
+        <design.MyTextView
+            android:id="@+id/login_prof_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تسجيل دخول"
+            android:gravity="center"
+            android:textSize="20sp"
+
+            android:textColor="#F2340E"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/logined_id"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+
+            <design.MyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="عماد عبد الناصر "
+                android:textColor="#ffff"
+
+                />
+
+            <LinearLayout
+                android:id="@+id/cred_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="20dp"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/Credit_id"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="مساعدة"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/baseline_keyboard_arrow_right_black_18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/month_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="عنا"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/baseline_keyboard_arrow_right_black_18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/logout_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="50dp"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:gravity="center"
+                    android:paddingLeft="10dp"
+                    android:text="تسجيل خروج"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:src="@drawable/shutdown" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

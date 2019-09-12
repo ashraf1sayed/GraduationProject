@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/from"
+        android:hint="from"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/to"
+        android:hint="to"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:hint="time"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price_edit"
+        android:hint="price"
+        android:inputType="number"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seats_edit"
+        android:inputType="number"
+
+        android:hint="seats available"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/date_for_go_id"
+        android:hint="date"
+        android:inputType="text"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"
+        android:text="add"/>
+
+
+
+</LinearLayout>

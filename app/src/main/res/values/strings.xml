@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Wasalny_last</string>
+    <string-array name="nationality">
+        <item> المنيا </item>
+        <item>سمالوط</item>
+        <item>قويسنا</item>
+        <item>مطاي</item>
+        <item>بني مزار</item>
+        <item>ديرمواس</item>
+        <item>مغاغة</item>
+
+    </string-array>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
